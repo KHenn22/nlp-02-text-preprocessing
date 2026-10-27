@@ -1,5 +1,8 @@
 """text_preprocessing.py - Project script (example).
 
+Author: Kevin Hennelly
+Date: 2026-10
+
 Purpose
 
   Read text data, preprocess the text, compare raw and cleaned tokens,
