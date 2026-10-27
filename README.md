@@ -13,7 +13,7 @@
 
 ## Project Overview
 
-Author: Denise Case
+Author: Kevin Hennelly
 
 Date: 2026 October
 
