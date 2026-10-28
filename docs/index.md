@@ -1,6 +1,6 @@
 # Web Mining and Applied NLP Project Report
 
-Web Mining and Applied NLP | Project 02 | Example Report
+Web Mining and Applied NLP | Project 02 | Custom Report
 
 ## Overview
 
@@ -70,6 +70,45 @@ Understanding these tradeoffs is important
 when preparing text for traditional NLP
 and modern language-model applications.
 
+## Custom Project
+
+Author: Kevin Hennelly
+
+## Problem
+
+Does stemming change which words appear most frequent, and how much
+does it reduce the vocabulary?
+
+## Data
+
+- Source: `data/text_data.txt`, the example data from Denise Case's
+  nlp-02-text-preprocessing project (MIT License).
+- The original data was kept so results could be compared directly
+  to the example's baseline.
+
+## Techniques Applied
+
+- Same pipeline as the example: tokenization, lowercasing,
+  punctuation removal, stop word and short token filtering.
+- Added: stemming with NLTK's PorterStemmer after stop word removal.
+
+## Methods and Settings
+
+- Stemmer: PorterStemmer (NLTK). Chosen because it is simple and
+  widely used.
+- Frequency table and bar chart use stemmed tokens instead of
+  cleaned tokens.
+
+## Custom Modifications
+
+- Prediction: If I add stemming, total tokens stay the same but
+  unique tokens decrease, because stemming renames words rather
+  than removing them.
+- Result: Total cleaned tokens stayed at 46; unique tokens dropped
+  from 38 to 37. Two forms of "remove" merged into "remov."
+- Unexpected: Many stems are not real words (e.g., "languag," "mani").
+
+
 ## Documentation Index
 
 - **Home** - this landing page
@@ -82,6 +121,9 @@ and modern language-model applications.
 - [Example Script](https://github.com/denisecase/nlp-02-text-preprocessing/blob/main/src/nlp/text_preprocessing.py)
 - [Example Notebook](https://github.com/denisecase/nlp-02-text-preprocessing/blob/main/notebooks/text_preprocessing.ipynb)
 - [Example Data](https://github.com/denisecase/nlp-02-text-preprocessing/blob/main/data/text_data.txt)
+- [Custom Script](https://github.com/KHenn22/nlp-02-text-preprocessing/blob/main/src/nlp/text_preprocessing_hennelly.py)
+- [Custom Notebook](https://github.com/KHenn22/nlp-02-text-preprocessing/blob/main/notebooks/text_preprocessing_hennelly.ipynb)
+
 
 ## Project Resources
 
